@@ -6,11 +6,7 @@ get '/' do
   "hello!"
 end
 
-get '/secret' do
-  "I've got a secret smile...and..."
-end
-
 get '/cat' do
-  names = ["Amigo", "Oscar", "Viking"].sample
+  @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
